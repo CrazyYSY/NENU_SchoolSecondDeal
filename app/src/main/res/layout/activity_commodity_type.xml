@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommodityTypeActivity">
+
+    <RelativeLayout
+        android:id="@+id/type_re1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple_200">
+
+        <ImageView
+            android:id="@+id/type_return"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="14dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white"
+            android:background="@mipmap/back"/>
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="商品分类"
+            android:textSize="24sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_commodity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/type_re1"
+        android:layout_marginTop="6dp"/>
+</RelativeLayout>
+

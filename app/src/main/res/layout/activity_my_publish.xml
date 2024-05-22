@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MyPublishActivity">
+    <RelativeLayout
+        android:id="@+id/mypub_r1"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/purple_200">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="14dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="quit"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white"
+            android:background="@mipmap/back"/>
+        <TextView
+            android:id="@+id/mybub_te1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的发布"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"/>
+        <ImageView
+            android:id="@+id/fabu_refresh"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_autorenew_24"
+            />
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/mypub_v1"
+        android:layout_width="match_parent"
+        android:layout_height="0.0001dp"
+        android:layout_below="@id/mypub_r1"
+        android:background="#C3C0C0"/>
+
+
+    <ListView
+
+        android:id="@+id/lv_my_commodity"
+        android:layout_below="@id/mypub_v1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+         />
+
+</RelativeLayout>

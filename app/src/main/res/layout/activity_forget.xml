@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgetActivity"
+    android:orientation="vertical"
+    android:background="#F4F3F3">
+
+    <RelativeLayout
+        android:id="@+id/biaoti"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple_200"
+        android:paddingHorizontal="14dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="quit"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white"
+            android:background="@mipmap/back"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:textColor="@color/white"
+            android:text="忘记密码"
+            android:textSize="22sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号:"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            />
+        <EditText
+            android:id="@+id/forget_id"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="请输入手机号"
+            android:layout_marginLeft="90dp"
+            android:background="@color/white"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_below="@id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#999999"/>
+
+    <RelativeLayout
+        android:id="@+id/re2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邮箱:"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            />
+        <EditText
+            android:id="@+id/forget_email"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="请输入邮箱"
+            android:layout_marginLeft="90dp"
+            android:background="@color/white"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/retrievepwd"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="点击找回" />
+
+</LinearLayout>
